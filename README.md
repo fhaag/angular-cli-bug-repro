@@ -1,2 +1,1 @@
-# angular-cli-bug-repro
-Reproduction of issues in angular-cli
+This repository contains only slightly modified versions of the minimal reproduction code for NX issues to demonstrate issues.
