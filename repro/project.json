@@ -8,6 +8,7 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
+	  "dependsOn": ["testoutput"],
       "options": {
         "outputPath": "dist/repro-app",
         "index": "src/index.html",
@@ -90,6 +91,13 @@
         ],
         "scripts": []
       }
-    }
+    },
+	"testoutput": {
+		"command": "echo 'TEST'"
+	},
+	"testcaller": {
+		"dependsOn": ["build"],
+		"command": "echo 'CALLER'"
+	}
   }
 }
