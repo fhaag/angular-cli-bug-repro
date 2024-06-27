@@ -56,25 +56,25 @@
       ]
     },
     "serve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@nx/angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "repro-app:build:production"
+          "buildTarget": "repro-app:build:production"
         },
         "development": {
-          "browserTarget": "repro-app:build:development"
+          "buildTarget": "repro-app:build:development"
         }
       },
       "defaultConfiguration": "development"
     },
     "testserve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@nx/angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "repro-app:testoutput"
+          "buildTarget": "repro-app:testoutput"
         },
         "development": {
-          "browserTarget": "repro-app:testoutput"
+          "buildTarget": "repro-app:testoutput"
         }
       },
       "defaultConfiguration": "development"
